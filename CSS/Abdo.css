@@ -1,0 +1,140 @@
+/* Start Global rules  */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color:#2196f3;
+    --main-color-alt:#1787e0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:750px ;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width:970px ;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width:1170px ;
+    }
+}
+/* End Global rules  */
+
+/* Start header  */
+.header {
+    padding: 25px 0;
+    background-color: white;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header .container ul{
+    display: flex;
+}
+
+.header .container ul li{
+    margin:0 30px;
+}
+
+.header .container a {
+    text-decoration: none;
+}
+
+.header .container a.logo {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 20px;
+}
+
+.header .container ul li > a {
+    font-size: 18px;
+    color: black;
+}
+
+.header .container > ul > li:last-child > a:hover .header .container > nav{
+  display: block;
+}
+
+.header .container nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-top: 1px solid #77777745;
+    display: none;
+}
+
+.header nav .menu-logo {
+    flex-basis: 160%;
+}
+
+.header nav .menu-logo img {
+    max-width: 100%;
+}
+
+.header .container nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 260px;
+}
+
+.header .container nav ul li  {
+   width: 100%;
+}
+
+.header .container nav ul li:not(:last-child) {
+    border-bottom: 1px solid #77777745
+}
+
+.header .container nav ul li  a{
+    display: block;
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+
+.header .container nav ul li  a i {
+    margin-right: 5px;
+}
+/* End header  */
