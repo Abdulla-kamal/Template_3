@@ -1207,9 +1207,10 @@ ul {
 }
 
 .events .info .unit {
-  max-width: 70px;
+  width: fit-content;
   border: 1px solid #d4d4d4;
   border-radius: 6px;
+  text-align: center;
   transition: var(--main-transition);
 }
 
@@ -1217,7 +1218,10 @@ ul {
   border: solid 1px var(--main-color);
 }
 
-.events .info .time .days {
+.events .info .time .days,
+.events .info .time .hours, 
+.events .info .time .minutes, 
+.events .info .time .seconds {
   padding: 15px;
   font-size: 35px;
   font-weight: bold;
